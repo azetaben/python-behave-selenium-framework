@@ -1,8 +1,8 @@
 """Step definitions for shopping cart feature."""
 from behave import given, when, then, step
 
-from doc.config.config import settings
-from constants.AppConstants import AppConstants
+from config.config import settings
+from constants.app_constants import AppConstants
 from exceptions import safe_int
 from features.steps.performance_step_helpers import run_with_perf_click, run_with_perf_navigation
 from utils.logger import get_logger

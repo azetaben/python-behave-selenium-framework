@@ -12,7 +12,7 @@ except ImportError:
     HAS_OPENPYXL = False
 
 from models import ExternalLoginDataRow
-from constants.AppConstants import AppConstants
+from constants.app_constants import AppConstants
 
 
 class TestDataLoader:

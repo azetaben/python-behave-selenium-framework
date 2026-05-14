@@ -2,8 +2,8 @@
 
 from dataclasses import dataclass
 
-from constants.AppConstants import AppConstants
-from doc.config.integration import build_config_bundle
+from constants.app_constants import AppConstants
+from config.integration import build_config_bundle
 
 
 @dataclass(frozen=True)

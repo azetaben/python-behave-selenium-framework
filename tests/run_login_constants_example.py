@@ -1,7 +1,7 @@
 """Tiny runner showing login-oriented constants' integration."""
 
 from constants import EndPoint, SauceDemoConstants
-from doc.config.integration import build_config_bundle
+from config.integration import build_config_bundle
 
 
 def main() -> None:

@@ -7,7 +7,7 @@ import logging
 from datetime import date
 from pathlib import Path
 
-from doc.config.config import settings
+from config.config import settings
 
 # Create logs directory
 logs_dir = Path("logs")

@@ -44,11 +44,17 @@ An enterprise-grade test automation framework built with Selenium WebDriver 4, P
 behave-selenium-framework/
 │
 ├── config/
-│   └── config.py                   # Pydantic settings
+│   ├── config.py                   # Pydantic settings
+│   ├── integration.py              # Unified config bundle helpers
+│   └── README.md                   # Config package usage
 │
 ├── core/
 │   ├── driver.py                   # WebDriver factory
-│   └── base_page.py                # BasePage with 60+ methods
+│   ├── base_page.py                # Lean BasePage composition root
+│   ├── page_element_mixin.py       # Element lookup/read helpers
+│   ├── page_navigation_mixin.py    # Navigation and page-readiness helpers
+│   ├── page_interaction_mixin.py   # Click, typing, mouse, scrolling, dropdowns
+│   └── page_context_mixin.py       # Windows, frames, storage, screenshots, alerts
 │
 ├── exceptions/
 │   ├── custom.py                   # Exception hierarchy
@@ -62,8 +68,16 @@ behave-selenium-framework/
 │       ├── *_steps.py              # Step definitions
 │
 ├── pages/
-│   ├── page_objects.py             # All page classes
-│   └── PageManager.py              # Page object manager
+│   ├── login_page.py               # Login page object
+│   ├── inventory_page.py           # Inventory page object
+│   ├── cart_page.py                # Cart page object
+│   ├── checkout_step_one_page.py   # Checkout step one page object
+│   ├── checkout_step_two_page.py   # Checkout step two page object
+│   ├── checkout_complete_page.py   # Checkout completion page object
+│   ├── product_detail_page.py      # Product detail page object
+│   ├── top_navigation_page.py      # Header/navigation page object
+│   ├── page_manager.py             # Page object manager
+│   └── page_objects.py             # Compatibility façade for legacy imports
 │
 ├── utils/
 │   └── logger.py                   # Logging utility
@@ -154,7 +168,7 @@ python -u run_login_constants_example.py
 behave features/config-integration/config_login_with_tokens.feature
 ```
 
-See `doc/config/README.md` for details.
+See `config/README.md` (runtime imports) and `doc/config/README.md` (legacy internals) for details.
 
 ---
 

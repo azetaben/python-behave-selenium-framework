@@ -10,10 +10,10 @@ from pathlib import Path
 import allure
 from behave.model_core import Status
 
-from doc.config.config import settings
-from doc.config.integration import attach_config_to_context
+from config.config import settings
+from config.integration import attach_config_to_context
 from core.driver import WebDriverFactory
-from pages.PageManager import PageManager
+from pages.page_manager import PageManager
 from performance.click_timing_context import ClickTimingContext
 from performance.performance_navigation_context import PerformanceNavigationContext
 from utils.logger import get_logger

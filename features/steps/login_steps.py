@@ -3,7 +3,7 @@ from behave import step
 
 from constants import SauceDemoConstants
 from utils.logger import get_logger
-from steps.performance_step_helpers import run_with_perf_navigation
+from features.steps.performance_step_helpers import run_with_perf_navigation
 
 logger = get_logger(__name__)
 CONSTANTS = SauceDemoConstants.from_config()

@@ -1,6 +1,8 @@
 # Config Integration Examples
 
-This folder contains integrated Python config modules and runnable examples.
+This folder contains legacy/internal config implementation details and runnable examples.
+
+Use `config/*` imports in framework code; `doc/config/*` remains for backward compatibility.
 
 ## What is integrated
 
