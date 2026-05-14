@@ -10,6 +10,7 @@ logger = get_logger(__name__)
 
 
 class TopNavigationPage(BasePage):
+
     MENU_BUTTON = (By.ID, "react-burger-menu-btn")
     LOGOUT_LINK = (By.ID, "logout_sidebar_link")
     CART_LINK = (By.CLASS_NAME, "shopping_cart_link")

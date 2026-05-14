@@ -26,7 +26,23 @@ logger = logging.getLogger(__name__)
 
 class WebDriverFactory:
     """Factory for creating WebDriver instances."""
-    
+
+    @staticmethod
+    def _find_cached_driver_binary(driver_folder: str, binary_name: str) -> Path | None:
+        """Return the newest cached driver binary from ~/.wdm if present."""
+        cache_root = Path.home() / ".wdm" / "drivers" / driver_folder
+        if not cache_root.exists():
+            return None
+
+        candidates = [
+            path
+            for path in cache_root.rglob(binary_name)
+            if path.is_file()
+        ]
+        if not candidates:
+            return None
+        return max(candidates, key=lambda p: p.stat().st_mtime)
+
     @staticmethod
     def create_driver() -> webdriver.Remote:
         """
@@ -137,7 +153,12 @@ class WebDriverFactory:
                 {"deviceName": settings.mobile_emulation_device}
             )
         
-        service = ChromeService(ChromeDriverManager().install())
+        cached_driver = WebDriverFactory._find_cached_driver_binary("chromedriver", "chromedriver.exe")
+        if cached_driver:
+            logger.info("Using cached ChromeDriver: %s", cached_driver)
+            service = ChromeService(str(cached_driver))
+        else:
+            service = ChromeService(ChromeDriverManager().install())
         logger.info(f"Chrome WebDriver created | Headless: {settings.headless}")
         return webdriver.Chrome(service=service, options=options)
 

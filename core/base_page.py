@@ -61,3 +61,10 @@ class BasePage(PageNavigationMixin, PageElementMixin, PageInteractionMixin, Page
             logger.warning("Timeout after %ss waiting for: %s", resolved_timeout, description)
             return False
 
+    def is_logo_displayed(self) -> bool:
+        logo_locator = getattr(self, "LOGO", None)
+        if logo_locator is None:
+            logger.debug("%s does not define LOGO locator", self.__class__.__name__)
+            return False
+        return self.is_element_visible(logo_locator, timeout=3)
+

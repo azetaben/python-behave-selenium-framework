@@ -11,4 +11,16 @@ Feature: Logout Functionality
     Then I am in "cart.html" page
     When the user navigates back to the inventory
     Then the user should be on the "inventory.html" page
+    And the user tap on the toggle menu button
+    And I close the hamburger menu
+    And the user tap on the toggle menu button
+    And the user can see "<menu>" link
+      | "Logout"          |
+      | "About"           |
+      | "Reset App State" |
+      | "All Items"       |
+    And the user clicks on the "Logout" menu link
+    Then the user should be on the login page
+    Then I am in "/" page
+
 
