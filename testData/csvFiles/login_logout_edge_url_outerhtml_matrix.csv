@@ -1,0 +1,5 @@
+testCaseId,flow,username,password,expectedUrlContains,outerHtmlTarget,expectedOuterHtmlContains
+MATRIX_TC_001,LOGIN_SUCCESS,standard_user,secret_sauce,inventory.html,inventoryList,inventory_item
+MATRIX_TC_002,LOGIN_FAILURE,standard_user,wrong_password,saucedemo.com/,loginError,data-test="error"
+MATRIX_TC_003,LOGIN_FAILURE_EMPTY,,,saucedemo.com/,loginError,Username is required
+MATRIX_TC_004,LOGOUT_AFTER_LOGIN,problem_user,secret_sauce,saucedemo.com/,loginForm,id="login-button"

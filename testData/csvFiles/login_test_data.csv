@@ -1,0 +1,12 @@
+test_case_id,username,password,expected_result,expected_message
+CSV_LOGIN_001,standard_user,secret_sauce,SUCCESS,
+CSV_LOGIN_002,locked_out_user,secret_sauce,FAILURE,Epic sadface: Sorry, this user has been locked out.
+CSV_LOGIN_003,problem_user,secret_sauce,SUCCESS,
+CSV_LOGIN_004,performance_glitch_user,secret_sauce,SUCCESS,
+CSV_LOGIN_005,invalid_user,wrong_password,FAILURE,Epic sadface: Username and password do not match any user in this service
+CSV_LOGIN_006,standard_user,wrong_password,FAILURE,Epic sadface: Username and password do not match any user in this service
+CSV_LOGIN_007,,secret_sauce,FAILURE,Epic sadface: Username is required
+CSV_LOGIN_008,standard_user,,FAILURE,Epic sadface: Password is required
+CSV_LOGIN_009,,,,Epic sadface: Username is required
+CSV_LOGIN_010,locked_out_user,wrong_password,FAILURE,Epic sadface: Username and password do not match any user in this service
+

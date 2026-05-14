@@ -1,0 +1,294 @@
+@login @dataDriven @csv_data @all
+Feature: Data-Driven Login Tests with CSV External Data # features/Data-Driven-Test/data_driven_csv_login.feature:2
+  As a test automation engineer
+  I want to execute login validations using external CSV test data
+  So that test credentials and expected outcomes are maintained outside feature files
+  And test coverage is comprehensive across different user types
+  @login @dataDriven @csv_data @all
+  Feature: Data-Driven Login Tests with CSV External Data  # features/Data-Driven-Test/data_driven_csv_login.feature:2
+@login @dataDriven @json_data @all
+Feature: Data-Driven Login Tests with JSON External Data # features/Data-Driven-Test/data_driven_json_login.feature:2
+  As a test automation engineer
+  I want to execute login validations using external JSON test data
+  So that test credentials and expected outcomes are maintained in portable JSON format
+  And tests can be easily integrated with external test management systems
+  @login @dataDriven @json_data @all
+  Feature: Data-Driven Login Tests with JSON External Data  # features/Data-Driven-Test/data_driven_json_login.feature:2
+@login_logout @dataDriven @externalData18 @all
+Feature: Login Data-Driven Tests From External Sources # features/Data-Driven-Test/login_json_excel_data_driven.feature:2
+  As a user
+  I want to execute login validations using external test data
+  So that credentials and expected outcomes are maintained outside feature files
+  @login_logout @dataDriven @externalData18 @all
+  Feature: Login Data-Driven Tests From External Sources  # features/Data-Driven-Test/login_json_excel_data_driven.feature:2
+@miscellaneous @Accessibility @regression @all
+Feature: Accessibility Check # features/accessibility-check/accessibility_check.feature:2
+@miscellaneous @Accessibility @login_logout @login_logout @all
+Feature: Web Page Accessibility # features/accessibility-check/login_products_page_accessibility.feature:6
+
+  @miscellaneous @Accessibility @login_logout @login_logout @all
+  Feature: Web Page Accessibility  # features/accessibility-check/login_products_page_accessibility.feature:6
+@Add2Cart @regression @all @ShippingCart
+Feature: Verify Add-To-Cart Functionality # features/add-to-cart/add_to_cart.feature:2
+
+  @Add2Cart @regression @all @ShippingCart
+  Feature: Verify Add-To-Cart Functionality  # features/add-to-cart/add_to_cart.feature:2
+@Add2Cart @ShippingCart @regression @all
+Feature: Shopping Cart Functionality # features/add-to-cart/add_to_cart_through_shippingcart.feature:2
+
+  @Add2Cart @ShippingCart @regression @all
+  Feature: Shopping Cart Functionality  # features/add-to-cart/add_to_cart_through_shippingcart.feature:2
+Feature: Shopping Cart Functionality # features/add-to-cart/shopping.feature:1
+  As a user
+  I want to manage my shopping cart
+  So that I can organize my purchases
+  Feature: Shopping Cart Functionality  # features/add-to-cart/shopping.feature:1
+@assertion_helper_tab @regression @all
+Feature: Assertion helper style checks for cart/inventory behavior # features/assertion-helper/assertion_helper_tab.feature:2
+
+  @assertion_helper_tab @regression @all
+  Feature: Assertion helper style checks for cart/inventory behavior  # features/assertion-helper/assertion_helper_tab.feature:2
+@login_assertion_helper @login_logout @regression @all
+Feature: Login functionality verified with assertion-style checks # features/assertion-helper/login_assertion_helper.feature:2
+
+  @login_assertion_helper @login_logout @regression @all
+  Feature: Login functionality verified with assertion-style checks  # features/assertion-helper/login_assertion_helper.feature:2
+@CheckoutProcess @regression @all
+Feature: Checkout process functionality # features/checkout-process/cart_flow.feature:2
+
+  @CheckoutProcess @regression @all
+  Feature: Checkout process functionality  # features/checkout-process/cart_flow.feature:2
+Feature: Checkout Process # features/checkout-process/checkout.feature:1
+  As a user
+  I want to complete a purchase
+  So that my order is successfully placed
+  Feature: Checkout Process  # features/checkout-process/checkout.feature:1
+@CheckoutProcess @regression @all
+Feature: Checkout finish verification # features/checkout-process/checkout_finish_flow.feature:2
+
+  @CheckoutProcess @regression @all
+  Feature: Checkout finish verification  # features/checkout-process/checkout_finish_flow.feature:2
+@CheckoutProcess @regression @all
+Feature: Checkout overview flow # features/checkout-process/checkout_overview_flow.feature:2
+
+  @CheckoutProcess @regression @all
+  Feature: Checkout overview flow  # features/checkout-process/checkout_overview_flow.feature:2
+@CheckoutProcess @regression @all
+Feature: Checkout your information flow # features/checkout-process/checkout_your_information_flow.feature:2
+
+  @CheckoutProcess @regression @all
+  Feature: Checkout your information flow  # features/checkout-process/checkout_your_information_flow.feature:2
+@config_only @config
+Feature: Python config integration examples # features/config-integration/config_integration.feature:2
+@config @login @smoke
+Feature: Login using integrated Python config tokens # features/config-integration/config_login_with_tokens.feature:2
+@regression @auth @session @cookie-bypass
+Feature: session persistence behavior # features/cookies-session/cookie_bypass.feature:2
+  As an authenticated user
+  I want my cart/session state to persist during normal navigation
+  So that I can continue shopping without re-authentication
+  @regression @auth @session @cookie-bypass
+  Feature: session persistence behavior  # features/cookies-session/cookie_bypass.feature:2
+@e2e @Regression @ParallelRun @all
+Feature: Complete Online Order For Specific User # features/end-to-end-and-miscellaneous/e2e/complete_online_order_for_specific_user.feature:2
+@e2e @regression @all
+Feature: Complete Online Order # features/end-to-end-and-miscellaneous/e2e/complete_online_order_for_users.feature:2
+@TC_ATC_004 @inventory-item @Add2Cart @regression @cart @complete_order
+Feature: Verify complete order functionality # features/end-to-end-and-miscellaneous/e2e/complete_order.feature:2
+  As a user,
+  I want to be able to add items to the cart,
+  view the cart details and complete the order successfully.@miscellaneous @regression @all
+Feature: Page Element Verification # features/end-to-end-and-miscellaneous/miscellaneous/check_for_broken_buttons_fields_links.feature:2
+
+  @miscellaneous @regression @all
+  Feature: Page Element Verification  # features/end-to-end-and-miscellaneous/miscellaneous/check_for_broken_buttons_fields_links.feature:2
+@miscellaneous @regression @all
+Feature: Footer Section Verification # features/end-to-end-and-miscellaneous/miscellaneous/footer_page.feature:2
+@miscellaneous @regression @performance @all
+Feature: Performance Smoke Audit # features/end-to-end-and-miscellaneous/miscellaneous/lighthouse_performance.feature:2
+@performance @all
+Feature: Performance Testing for SauceDemo # features/end-to-end-and-miscellaneous/miscellaneous/performance.feature:2
+Feature: Login Functionality # features/login-logout/login-application.feature:1
+  As a user
+  I want to log into the Sauce Demo application
+  So that I can access the shopping features
+  Feature: Login Functionality  # features/login-logout/login-application.feature:1
+@login_logout @all
+Feature: Login Functionality # features/login-logout/login.feature:2
+
+  @login_logout @all
+  Feature: Login Functionality  # features/login-logout/login.feature:2
+@login_logout @all
+Feature: Login and session navigation functionality # features/login-logout/login_and_logout.feature:2
+@login_logout @edge @all
+Feature: Login and logout edge cases # features/login-logout/login_and_logout_edge_cases.feature:2
+
+  @login_logout @edge @all
+  Feature: Login and logout edge cases  # features/login-logout/login_and_logout_edge_cases.feature:2
+@login_logout @all
+Feature: Login and cart state flow # features/login-logout/login_and_reset_app_state.feature:2
+
+  @login_logout @all
+  Feature: Login and cart state flow  # features/login-logout/login_and_reset_app_state.feature:2
+@login_logout @filter @regression @all
+Feature: Login and navigation checks # features/login-logout/login_and_toggle.feature:2
+
+  @login_logout @filter @regression @all
+  Feature: Login and navigation checks  # features/login-logout/login_and_toggle.feature:2
+@login_logout @all
+Feature: Login Functionality # features/login-logout/login_application.feature:2
+
+  @login_logout @all
+  Feature: Login Functionality  # features/login-logout/login_application.feature:2
+@login_logout @dataDriven @all
+Feature: Login Data-Driven Tests # features/login-logout/login_datatable.feature:2
+  As a user
+  I want to verify login behaviour across all user types and credential combinations
+  In order to ensure the authentication system works correctly
+  @login_logout @dataDriven @all
+  Feature: Login Data-Driven Tests  # features/login-logout/login_datatable.feature:2
+@login_datatable_collections @regression @all
+Feature: Login DataTable collection types # features/login-logout/login_datatable_collections.feature:2
+  Demonstrates data-driven login scenarios with supported step definitions.
+  @login_datatable_collections @regression @all
+  Feature: Login DataTable collection types  # features/login-logout/login_datatable_collections.feature:2
+@login_general_examples
+Feature: Login examples using general page contracts and helper utilities # features/login-logout/login_general_interface_examples.feature:2
+
+  @login_general_examples
+  Feature: Login examples using general page contracts and helper utilities  # features/login-logout/login_general_interface_examples.feature:2
+@login_helper_utilities_manifest
+Feature: Login helper utilities manifest coverage # features/login-logout/login_helper_utilities_manifest.feature:2
+
+  @login_helper_utilities_manifest
+  Feature: Login helper utilities manifest coverage  # features/login-logout/login_helper_utilities_manifest.feature:2
+@login_logout @all @error_validation_tests
+Feature: Login Functionality # features/login-logout/login_invalid.feature:2
+
+  @login_logout @all @error_validation_tests
+  Feature: Login Functionality  # features/login-logout/login_invalid.feature:2
+@regression @auth @login @keyboard @accessibility
+Feature: Login keyboard navigation # features/login-logout/login_keyboard_navigation.feature:2
+  As a keyboard user
+  I want to navigate the login form with the Tab key
+  So that the login controls are reachable without using a mouse
+  @regression @auth @login @keyboard @accessibility
+  Feature: Login keyboard navigation  # features/login-logout/login_keyboard_navigation.feature:2
+@login_logout @edgeUrlOuterHtml @all
+Feature: Login edge coverage # features/login-logout/login_logout_edge.feature:2
+
+  @login_logout @edgeUrlOuterHtml @all
+  Feature: Login edge coverage  # features/login-logout/login_logout_edge.feature:2
+@login_transformer @regression @all
+Feature: Login using LoginDataTransformer # features/login-logout/login_transformer.feature:2
+  Verifies data-driven login behavior with supported step definitions.
+  @login_transformer @regression @all
+  Feature: Login using LoginDataTransformer  # features/login-logout/login_transformer.feature:2
+@login_logout @all
+Feature: Login Functionality # features/login-logout/login_with_domain-object.feature:2
+  As a user,
+  I want to login into the application
+  inorder to make online purchase.
+  @login_logout @all
+  Feature: Login Functionality  # features/login-logout/login_with_domain-object.feature:2
+@login_logout @all
+Feature: Logout Functionality # features/login-logout/logout.feature:2
+
+  @login_logout @all
+  Feature: Logout Functionality  # features/login-logout/logout.feature:2
+Feature: Login security checks for Sauce Demo # features/login-security-checks/login_security_test.feature:1
+  As a user,
+  I want to ensure that the login functionality is secure against common attack vectors
+  So that my account and data are protected.
+  Feature: Login security checks for Sauce Demo  # features/login-security-checks/login_security_test.feature:1
+Feature: Login security checks for Sauce Demo # features/login-security-checks/login_unauthenticated.feature:1
+  As a user,
+  I want to ensure that the login functionality is secure against common attack vectors
+  So that my account and data are protected.@verification_helper @color_conversion @all
+Feature: Page color-related UI smoke verification # features/page-ui-content/Page_Color_Conversion_Verification.feature:2
+@verification_helper @text_and_lists @all
+Feature: Page text and lists verification # features/page-ui-content/Page_Text_And_Lists_Verification.feature:2
+
+  @verification_helper @text_and_lists @all
+  Feature: Page text and lists verification  # features/page-ui-content/Page_Text_And_Lists_Verification.feature:2
+@verification_helper @generic_elements @all
+Feature: Generic text, button and link verification # features/page-ui-content/Page_Text_Button_Link_Verification.feature:2
+
+  @verification_helper @generic_elements @all
+  Feature: Generic text, button and link verification  # features/page-ui-content/Page_Text_Button_Link_Verification.feature:2
+@verification_helper @display_state @all
+Feature: Element displayed and enabled state verification # features/page-ui-content/Page_Text_Displayed_Enabled_State_Verification.feature:2
+
+  @verification_helper @display_state @all
+  Feature: Element displayed and enabled state verification  # features/page-ui-content/Page_Text_Displayed_Enabled_State_Verification.feature:2
+@verification_helper @page_verification @all
+Feature: Page URL, title and header verification # features/page-ui-content/Page_Url_Title_Header_Verification.feature:2
+
+  @verification_helper @page_verification @all
+  Feature: Page URL, title and header verification  # features/page-ui-content/Page_Url_Title_Header_Verification.feature:2
+
+  @TC_VP_004 @Smoke @E2E @regression
+  Scenario: Login then cart navigation verifies route transition  # features/page-ui-content/Page_Url_Title_Header_Verification.feature:31
+    Given the user navigates to the application home page         # features/steps/login_steps.py:12
+    Then the username field should be visible                     # features/steps/login_steps.py:49
+    Given the user has successfully logged in                     # features/steps/shopping_steps.py:13
+    When the user clicks on the cart badge                        # features/steps/shopping_steps.py:245
+    Then I am in "cart.html" page                                 # features/steps/shopping_steps.py:139
+
+@login_logout @performance @click_performance @all
+Feature: Login and navigation performance smoke checks # features/performance/login_logout_performance.feature:2
+
+  @login_logout @performance @click_performance @all
+  Feature: Login and navigation performance smoke checks  # features/performance/login_logout_performance.feature:2
+@performance
+Feature: Navigation timing metrics # features/performance/navigation_timings.feature:2
+@regression @performance
+Feature: Page load performance metrics # features/performance/page_load_performance.feature:2
+  As an application user
+  I want key pages to load within acceptable performance thresholds
+  So that the application feels responsive during normal use
+  @regression @performance
+  Feature: Page load performance metrics  # features/performance/page_load_performance.feature:2
+@performance @page_load_time @all
+Feature: Page load time from login to all application pages # features/performance/page_load_time.feature:2
+  As a performance engineer
+  I want to measure the exact page load time for every page transition starting from the login page
+  So that regressions are caught early and each page meets its SLA threshold
+  @performance @page_load_time @all
+  Feature: Page load time from login to all application pages  # features/performance/page_load_time.feature:2
+@regression @performance
+Feature: Performance checks # features/performance/performance_checks.feature:2
+  As an application user
+  I want the main pages to meet practical speed expectations
+  So that performance regressions are detected before release
+  @regression @performance
+  Feature: Performance checks  # features/performance/performance_checks.feature:2
+@ProductsDisplayedPage @ParallelRun @all @error_validation_tests
+Feature: Product Sorting # features/product-display-page-with-different-sort-options/filter_products_by_name_and_price.feature:2
+
+  @ProductsDisplayedPage @ParallelRun @all @error_validation_tests
+  Feature: Product Sorting  # features/product-display-page-with-different-sort-options/filter_products_by_name_and_price.feature:2
+@ProductsDisplayedPage @ParallelRun @all @error_validation_tests
+Feature: Product Sorting # features/product-display-page-with-different-sort-options/filter_products_by_name_and_price_for_problem_user.feature:2
+
+  @ProductsDisplayedPage @ParallelRun @all @error_validation_tests
+  Feature: Product Sorting  # features/product-display-page-with-different-sort-options/filter_products_by_name_and_price_for_problem_user.feature:2
+@regression @auth @login @encoding
+Feature: Login security encoded-input checks # features/security/login_base64.feature:2
+  As an application user
+  I want encoded credential handling to be validated
+  So that login behavior remains predictable when encoded inputs are used
+  @regression @auth @login @encoding
+  Feature: Login security encoded-input checks  # features/security/login_base64.feature:2
+@regression @security @auth @login
+Feature: Login security and penetration testing # features/security/login_security.feature:2
+  As a security-conscious application owner
+  I want login flows to resist common attack patterns
+  So that authentication remains protected against misuse and tampering
+  @regression @security @auth @login
+  Feature: Login security and penetration testing  # features/security/login_security.feature:2
+@login_logout @all
+Feature: Login Functionality # features/ui-test/login_ui.feature:2
+  As a user,
+  I want to login into the application
+  inorder to make online purchase.
